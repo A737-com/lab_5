@@ -12,6 +12,7 @@
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
 
   <p><section>My Info</section></p>
+  <fieldset>
     <!-- Single line text fields -->
      
     <label for="first_name_field">First Name:</label>
@@ -42,14 +43,16 @@
       <option value="Under 18">Under 18</option>
       <option value="Over 18">Over 18</option>
     </select>
-    
+    </fieldset>
     <!-- Checkboxes -->
+
     <p><section>My Availibility</section></p>
+    <fieldset>
     <label><strong>Days Available:</strong></label>
 
     <label for="monday">Monday</label><br><input type="checkbox" id="monday" name="available_field[]" value="Monday">
     
-    <label for="tuesday">Tuesday</label><br> <input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday">
+    <label for="tuesday">Tuesday</label><br><input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday">
 
     <label for="wednesday">Wednesday</label><br><input type="checkbox" id="wednesday" name="available_field[]" value="Wednesday">
     
@@ -60,7 +63,7 @@
      <!-- Multi line text area -->
     <label for="comments_field">Comments:</label>
     <textarea id="comments_field" name="comments_field" rows="4" cols="40"></textarea>
-
+    </fieldset>
     <!-- Hidden field -->
     <input type="hidden" name="hidden_field" value="Archit Sunil Singh">
 

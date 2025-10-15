@@ -4,33 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    form {
+      background: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 20px 30px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      background-color: #0073e6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #005bb5;
+    }
+  </style>
 </head>
 <body>
+
   <h2>Lab 5 Form</h2>
 
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-    <!-- First Name -->
+    <!-- Single line text fields -->
     <label for="first_name_field">First Name:</label>
-    <input type="text" id="first_name_field" name="first_name_field" required><br><br>
+    <input type="text" id="first_name_field" name="first_name_field" required>
 
-    <!-- Last Name -->
     <label for="last_name_field">Last Name:</label>
-    <input type="text" id="last_name_field" name="last_name_field" required><br><br>
+    <input type="text" id="last_name_field" name="last_name_field" required>
 
-    <!-- Phone Number -->
-    <label for= "phone_field">Phone:</label>
-    <input type="text" id="phone_field" name="phone_field" required><br><br>
+    <label for="phone_field">Phone Number:</label>
+    <input type="text" id="phone_field" name="phone_field" required>
 
-    <!-- Email -->
-    <label for="email_field">Email:</label>
-    <input type="email" id="email_field" name="email_field" required><br><br>
+    <label for="email_field">Email Address:</label>
+    <input type="email" id="email_field" name="email_field" required>
 
-    <!-- Comments -->
-    <label for="comments_field">Comments:</label><br>
-    <textarea id="comments_field" name="comments_field" rows="4" cols="40"></textarea><br><br>
+    <!-- Multi line text area -->
+    <label for="comments_field">Comments:</label>
+    <textarea id="comments_field" name="comments_field" rows="4" cols="40"></textarea>
 
-    <!-- Gender (Radio Buttons) -->
-    <label>Gender:</label><br>
+    <!-- Radio Buttons -->
+    <label>Gender:</label>
     <input type="radio" id="male" name="gender_field" value="Male">
     <label for="male">Male</label><br>
 
@@ -38,10 +78,10 @@
     <label for="female">Female</label><br>
 
     <input type="radio" id="other" name="gender_field" value="Other">
-    <label for="other">Other</label><br><br>
+    <label for="other">Other</label><br>
 
-    <!-- Availability (Checkboxes) -->
-    <label>Available Days:</label><br>
+    <!-- Checkboxes -->
+    <label>Available Days:</label>
     <input type="checkbox" id="monday" name="available_field[]" value="Monday">
     <label for="monday">Monday</label><br>
 
@@ -55,9 +95,9 @@
     <label for="thursday">Thursday</label><br>
 
     <input type="checkbox" id="friday" name="available_field[]" value="Friday">
-    <label for="friday">Friday</label><br><br>
+    <label for="friday">Friday</label><br>
 
-    <!-- Age (Dropdown Menu) -->
+    <!-- Drop Down Menu -->
     <label for="age_field">Age Range:</label>
     <select id="age_field" name="age_field">
       <option value="Under 18">Under 18</option>
@@ -65,14 +105,15 @@
       <option value="26-35">26-35</option>
       <option value="36-50">36-50</option>
       <option value="51+">51+</option>
-    </select><br><br>
+    </select>
 
-    <!-- Hidden Field -->
-    <input type="hidden" name="hidden_field" value="Your Name Here">
+    <!-- Hidden field -->
+    <input type="hidden" name="hidden_field" value="Archit Singh">
 
-    <!-- Submit Button -->
+    <!-- Submit -->
     <input type="submit" value="Submit">
   </form>
+
 </body>
 </html>
 

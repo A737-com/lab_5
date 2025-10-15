@@ -18,7 +18,7 @@
     <input type="text" id="last_name_field" name="last_name_field" required><br><br>
 
     <!-- Phone Number -->
-    <label for="phone_field">Phone:</label>
+    <label for= "phone_field">Phone:</label>
     <input type="text" id="phone_field" name="phone_field" required><br><br>
 
     <!-- Email -->

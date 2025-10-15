@@ -10,7 +10,10 @@
   <h2><strong>Volunteer Form</strong></h2>
 
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+
+  <p><section>My Info</section></p>
     <!-- Single line text fields -->
+     
     <label for="first_name_field">First Name:</label>
     <input type="text" id="first_name_field" name="first_name_field" required>
 
@@ -25,24 +28,25 @@
 
     <!-- Radio Buttons -->
     <label>Gender:</label>
+
     <input type="radio" id="male" name="gender_field" value="Male">
     <label for="male">Male</label><br>
 
     <input type="radio" id="female" name="gender_field" value="Female">
     <label for="female">Female</label><br>
 
-    <input type="radio" id="other" name="gender_field" value="Other">
-    <label for="other">Other</label><br>
-
     <!-- Drop Down Menu -->
-    <label for="age_field">Age Range:</label>
+    <label for="age_field">Age:</label>
+    
     <select id="age_field" name="age_field">
       <option value="Under 18">Under 18</option>
       <option value="Over 18">Over 18</option>
     </select>
-
+    
     <!-- Checkboxes -->
+    <p><section>My Availibility</section></p>
     <label><strong>Days Available:</strong></label>
+
     <label for="monday">Monday</label><br><input type="checkbox" id="monday" name="available_field[]" value="Monday">
     
     <label for="tuesday">Tuesday</label><br> <input type="checkbox" id="tuesday" name="available_field[]" value="Tuesday">

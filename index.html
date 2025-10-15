@@ -11,7 +11,8 @@
 
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
 
-  <p><section>My Info</section></p><fieldset>
+  <fieldset>
+  <legend><section>My Info</section></legend>
     <!-- Single line text fields -->
     <p>
       <label for="first_name_field">First Name:</label>
@@ -36,6 +37,7 @@
     <!-- Radio Buttons -->
     <p>
       <label>Gender:</label>
+
       <input type="radio" id="male" name="gender_field" value="Male">
       <label for="male">Male</label><br>
 
@@ -55,9 +57,9 @@
 
     </fieldset>
     <!-- Checkboxes -->
-
-    <section>My Availibility</section>
     <fieldset>
+    <legend><section>My Availibility</section></legend>
+   
       <p><strong>Days Available:</strong></p>
 
       <input type="checkbox" id="sunday" name="available_field[]" value="Sunday">

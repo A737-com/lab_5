@@ -60,6 +60,9 @@
     <fieldset>
       <p><strong>Days Available:</strong></p>
 
+      <input type="checkbox" id="sunday" name="available_field[]" value="Sunday">
+      <label for="sunday">Sunday</label><br>
+
       <input type="checkbox" id="monday" name="available_field[]" value="Monday">
       <label for="monday">Monday</label><br>
 
@@ -77,8 +80,10 @@
     
      <!-- Multi line text area -->
     <p>
-      <label for="comments_field">Comments:</label>
+      <label for="comments_field"><strong>Comments:</strong></label>
+      <p>
       <textarea id="comments_field" name="comments_field" rows="4" cols="40"></textarea>
+      </p>
     </p>
   </fieldset>
     <!-- Hidden field -->

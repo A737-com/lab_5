@@ -11,72 +11,71 @@
 
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
 
-  <fieldset>
-  <legend><section>My Info</section></legend>
-    <!-- Single line text fields -->
-    <p>
-      <label for="first_name_field">First Name:</label>
-      <input type="text" id="first_name_field" name="first_name_field" required>
-    </p>
+    <!-- My Info Section -->
+    <fieldset>
+      <legend><strong>My Info</strong></legend>
 
-    <p>
-      <label for="last_name_field">Last Name:</label>
-      <input type="text" id="last_name_field" name="last_name_field" required>
-    </p>
+      <p>
+        <label for="first_name_field">First Name:</label><br>
+        <input type="text" id="first_name_field" name="first_name_field" required>
+      </p>
 
-    <p>
-      <label for="phone_field">Phone Number:</label>
-      <input type="text" id="phone_field" name="phone_field" required>
-    </p>
+      <p>
+        <label for="last_name_field">Last Name:</label><br>
+        <input type="text" id="last_name_field" name="last_name_field" required>
+      </p>
 
-    <p>
-      <label for="email_field">Email Address:</label>
-      <input type="email" id="email_field" name="email_field" required>
-    </p>
+      <p>
+        <label for="phone_field">Phone Number:</label><br>
+        <input type="text" id="phone_field" name="phone_field" required>
+      </p>
 
-    <!-- Radio Buttons -->
-    <p>
-      <label>Gender:</label><br>
-      Male <input type="radio" id="male" name="gender_field" value="Male">
-      Female <input type="radio" id="female" name="gender_field" value="Female">
-    </p>
+      <p>
+        <label for="email_field">Email Address:</label><br>
+        <input type="email" id="email_field" name="email_field" required>
+      </p>
 
-    <!-- Drop Down Menu -->
-    <p>
-      <label for="age_field">Age:</label>
-      <select id="age_field" name="age_field">
-         <option value="Under 18">Under 18</option>
-         <option value="Over 18">Over 18</option>
-       </select>
-    </p>
+      <p>
+        <label>Gender:</label><br>
+        Male <input type="radio" id="male" name="gender_field" value="Male">
+        Female <input type="radio" id="female" name="gender_field" value="Female">
+      </p>
 
+      <p>
+        <label for="age_field">Age:</label><br>
+        <select id="age_field" name="age_field">
+          <option value="Under 18">Under 18</option>
+          <option value="Over 18">Over 18</option>
+        </select>
+      </p>
 
     </fieldset>
-    <!-- Checkboxes -->
-    <fieldset>
-    <legend><section>My Availibility</section></legend>
-   
-    <p><strong>Days Available:</strong></p>
 
-    <label>Monday <input type="checkbox" name="available_field[]" value="Monday"></label><br>
-    <label>Tuesday <input type="checkbox" name="available_field[]" value="Tuesday"></label><br>
-    <label>Wednesday <input type="checkbox" name="available_field[]" value="Wednesday"></label><br>
-    <label>Thursday <input type="checkbox" name="available_field[]" value="Thursday"></label><br>
-    <label>Friday <input type="checkbox" name="available_field[]" value="Friday"></label>
-     <!-- Multi line text area -->
-    <p>
-      <label for="comments_field"><strong>Comments:</strong></label>
+    <!-- Availability Section -->
+    <fieldset>
+      <legend><strong>My Availability</strong></legend>
+
+      <p><strong>Days Available:</strong></p>
+
+      <label>Monday <input type="checkbox" name="available_field[]" value="Monday"></label><br>
+      <label>Tuesday <input type="checkbox" name="available_field[]" value="Tuesday"></label><br>
+      <label>Wednesday <input type="checkbox" name="available_field[]" value="Wednesday"></label><br>
+      <label>Thursday <input type="checkbox" name="available_field[]" value="Thursday"></label><br>
+      <label>Friday <input type="checkbox" name="available_field[]" value="Friday"></label>
+
       <p>
-      <textarea id="comments_field" name="comments_field" rows="4" cols="40"></textarea>
+        <label for="comments_field"><strong>Comments:</strong></label><br>
+        <textarea id="comments_field" name="comments_field" rows="4" cols="40"></textarea>
       </p>
-    </p>
-  </fieldset>
+
+    </fieldset>
+
     <!-- Hidden field -->
     <input type="hidden" name="hidden_field" value="Archit Sunil Singh">
 
-    <!-- Submit -->
+    <!-- Submit button -->
     <p>
-     <input type="Submit" value="Submit Query">
+      <input type="submit" value="Submit Query">
     </p>
 
   </form>
